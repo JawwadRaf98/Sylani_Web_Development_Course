@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.introduction {
+    padding: 20px;
+    margin-left: 20px;
+    border-spacing: 10px;
+}
+
+.assignment {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    margin: 20px 0;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(23, 121, 121);
+}
+
+.content {
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 50px auto;
+    width: 75%;
+    border: 2px solid black;
+    box-shadow: 4px 3px 30px black;
+}
+.content th {
+    color: blue;
+    text-align: left;
+    padding: 10px;
+}
+.content td {
+    padding: 10px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+td a {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}

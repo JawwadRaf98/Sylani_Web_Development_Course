@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.logo {
+    width: 25%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.text {
+    font-size: larger;
+    padding-top: 40px;
+    text-align: center;
+}
+.text h1 {
+    padding-bottom: 25px;
+    color: green;
+}
+.text h2 {
+    color: rgb(139, 55, 199);
+}
+.text p {
+    font-size: 40px;
+    padding-top: 25px;
+    font-weight: bold;
+}

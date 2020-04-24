@@ -1,3 +1,5 @@
+@import url('mediaquery.css')
+
 *{
     padding: 0 ;
     margin: 0;
@@ -12,14 +14,17 @@
 .box3 a{
     display: inline-block;
     border: 1px solid black;
-    color: black;
+    color: rgb(85, 74, 74);
     margin: 2px 5px;
     background-color: #fff;
-    font-weight: bold;
     padding: 3px 5px;
     cursor: pointer;
     text-decoration:none;
     
+}
+.box3 a:hover{
+    color: rgb(85, 74, 74); 
+    text-decoration: none;
 }
 
 .social-acc img{
@@ -28,7 +33,107 @@
     height: 30px;
 }
 
+.active-link a{
+    text-decoration: none;
+    padding: 6px 20px;
+    border-radius: 100px;
+    background-color: #316DC3;
+    color: white;
+    font-size: 18px; 
+    font-weight: 500;   
+}
+.active-link a:hover{
+    text-decoration: none;  
+    color: white;
+}
+.link a{
+    text-decoration: none;
+    padding: 6px 20px;
+    color: black;
+    font-weight: 500;
+    font-size: 18px; 
+     
+}
+.link a:hover{
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6px 20px;
+    color: white;
+    border-radius: 100px;
+    background-color: #316DC3;
+}
+.nav-ul{
+    margin-left: 30%
+}
+.marquee{
+    margin: 10px 100px;
+}
 
-class="btn btn-default  btn-outline-dark btn-flat btn-xs bg-light  font-11"
-class="btn btn-default  btn-outline-dark btn-flat btn-xs bg-light  font-11"
-class="btn btn-default  btn-outline-dark btn-flat btn-xs bg-light  font-11"
+
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+.sticky {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 0px;
+  }
+
+.blue{
+font-weight: bold;
+    color: blue;
+}
+.green{
+    font-weight: bold;
+    color: green;
+}
+.main{
+font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+.inner{
+    margin: 100px 0;
+    text-align: justify;
+    width: 90%;
+    padding: 20px 30px;
+}
+.bg-clr{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: white;
+    background-color: rgba(36, 79, 242, 0.9) !important;
+}
+.lgreen{
+    font-weight: bold;
+    color: rgb(0, 255, 0);
+}
+.counter{
+    font-family: 'Merriweather';
+}
+.paragraph{
+    font-size: 20px;
+}
+
+.fa-angle-down:before {
+    content: "\f207";
+}
+.border-box{
+    border: 1 px solid black;
+    text-align: center;
+    padding: 25px;
+}
+.wtd{
+    padding-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    color: blue;
+}
+.wtd h4{
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 30px;
+}

@@ -1,4 +1,4 @@
-@import url('mediaquery.css')
+
 
 *{
     padding: 0 ;
@@ -91,28 +91,76 @@ font-weight: bold;
     font-weight: bold;
     color: green;
 }
-.main{
-font-family: 'Times New Roman', Times, serif;
-    padding: 20px;
-}
+
+
 .inner{
-    margin: 100px 0;
+    font-family: 'Merriweather', serif;
     text-align: justify;
     width: 90%;
-    padding: 20px 30px;
+    padding: 20px 10px;
 }
+.heading{
+    font-family: 'Merriweather', serif;
+
+    text-transform: uppercase;
+    /* border: 1px solid black;
+    overflow: hidden; */
+    text-align: center  ;
+    /* font-size: 25px; */
+        /* font-weight: 800; */
+    font-size: 250%;
+    /* line-height: 1 ! important; */
+    padding-bottom: 10px;
+}
+.logo-after-heading{
+    Padding-top: 10px;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin: auto;
+    position: relative;
+    margin: 0 auto;
+    max-width: 200px;
+    position: relative
+}
+/* logo css */
+.logo-after-heading img{
+    width: 40px;
+    height: 40px;
+
+}
+.logo-after-heading::before{
+    content: "";
+    height: 2px;
+    position: absolute;
+    left:1rem;
+    top: 40px;
+    width: 50px;
+    background: #427900;
+}
+.logo-after-heading::after{
+    content: "";
+    height: 2px;
+    position: absolute;
+    right:1rem;
+    top: 40px;
+    width: 50px;
+    background: #427900;
+}
+/* logo css */
+
 .bg-clr{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Merriweather', serif;
     font-weight: bolder;
     color: white;
     background-color: rgba(36, 79, 242, 0.9) !important;
 }
+
 .lgreen{
     font-weight: bold;
     color: rgb(0, 255, 0);
 }
 .counter{
-    font-family: 'Merriweather';
+    font-family: 'Merriweather' serif;
 }
 .paragraph{
     font-size: 20px;
@@ -128,7 +176,7 @@ font-family: 'Times New Roman', Times, serif;
 }
 .wtd{
     padding-top: 100px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Merriweather', serif;
     font-weight: 600;
     color: blue;
 }
@@ -137,10 +185,99 @@ font-family: 'Times New Roman', Times, serif;
     text-transform: uppercase;
     padding-top: 30px;
 }
+.mission{
+    font-family: 'Merriweather', serif;
+}
+.mission h3{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    color: #316DC3;
+    padding-top: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+.mission h3::after{
+    margin-top: 10px;
+    bottom: -1px;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 50px;
+    background: #427900;
+}
 .mission-box{
+    box-sizing: border-box;
+    background-color: #f7f8fa;
+    border-radius: 5px;
     height: 70px;
-    border: 1px solid black;
     width: 100%;
-    margin:  10px 5px;
+    margin:  10px auto;
+    box-shadow: 2px 2px 15px 5px #f7f8fa;
 
+}
+.mission-box img{
+    width: 40px;
+    height: 40px;
+    margin: 15px 30px;
+    float: left;
+}
+.mission-box h5{
+    padding: 25px 30px;
+    font-size: 130%;
+    font-weight: 600;
+    text-transform: uppercase   ;
+    color: #316DC3;
+}
+.footer{
+    background-color:#252424;
+    color: blanchedalmond;
+}
+.footer .fbox1, .fbox2{
+    margin: 100px 0;
+}
+.fbox2 .inner1{
+    padding-bottom: 35px;
+    float: left;
+}
+.fbox2 .inner2{
+    float: right;
+}
+.inner1 h5, .inner2 h5{
+    text-transform: capitalize;
+}
+.inner1 h5{
+    border-bottom:1px solid gray;
+    padding-bottom: 10px;
+    position: relative;
+}
+.inner1 h5::before{
+    
+    content: "";
+    height: 2px;
+    position: absolute;
+    /* left:1rem; */
+    top: 32px;
+    width: 60px;
+    background: #427900;
+}
+.footer-icon img{
+    width: 55px;
+    height: 55px;
+}
+.footer-icon img#yt{
+    width: 75px;
+    height: 75px;
+}
+.footer-icon img#ins{
+    width: 65px;
+    height: 65px;
+}
+.footer-icon img#tw{
+    width: 60px;
+    height: 60px;
+}
+.footer-icon img#fb{
+    margin-right: 7px;
 }

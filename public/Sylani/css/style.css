@@ -281,3 +281,24 @@ font-weight: bold;
 .footer-icon img#fb{
     margin-right: 7px;
 }
+/* .fbox1 ul {
+    line-height: 2rem;
+    color: rgb(167, 165, 165);
+    font-weight: 450;
+    padding-top: 30px;
+} */
+/* .fbox1 ul li{
+    /* line-height: 1em; */
+    /* white-space: nowrap; */
+    /* list-style: none;
+} */ 
+.fbox1 p img{
+    width: 20px;
+    height: 20px;
+}
+.fbox1 p .globe img{
+    width: 25px;
+    height: 20px;
+    margin: 0px 5px 0px 60px;
+}
+

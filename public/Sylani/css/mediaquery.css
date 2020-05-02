@@ -8,6 +8,7 @@
 .nav-ul{
     margin-left: 250px;
 }
+}
 @media screen and (max-width:1290px){
     .nav-ul{
         margin-left: 175px;
@@ -35,11 +36,50 @@
     .active-link a, .link a:hover,  .link a{
         padding: 3px 20px;
     }
-    .link a:hover{
-
 }
 @media screen and (min-width:320px){
     body{
         display: block;
+    }
+}
+@media screen and (max-width:992px){
+    .gallery-img  .image{
+        width: 33%;
+    }
+}
+@media screen and (max-width:600px){
+    .gallery-img  .image{
+        width: 50%;
+    }
+
+}
+@media screen and (max-width:450px){
+    .gallery-img  .image{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:1237px){
+    .navbar-nav{
+        
+        margin-left: 300px;
+      
+    }
+}
+
+@media screen and (max-width:1150px){
+    .navbar-nav{
+        
+        margin-left: 200px;
+      
+    }
+}
+@media screen and (max-width:1036px){
+    .navbar-nav{
+        
+        margin-left: 150px;
+      
     }
 }

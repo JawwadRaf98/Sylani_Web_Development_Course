@@ -1,8 +1,7 @@
-
-
 *{
     padding: 0 ;
     margin: 0;
+
 }
 .bg-clr{
     background-color: #316DC3;
@@ -10,7 +9,6 @@
 .box1, .box2, .box3{
     text-align: center;
 }
-
 .box3 a{
     display: inline-block;
     border: 1px solid black;
@@ -26,62 +24,16 @@
     color: rgb(85, 74, 74); 
     text-decoration: none;
 }
-
 .social-acc img{
     margin-left: 5px;
     width: 30px;
     height: 30px;
 }
 
-.active-link a{
-    text-decoration: none;
-    padding: 6px 20px;
-    border-radius: 100px;
-    background-color: #316DC3;
-    color: white;
-    font-size: 18px; 
-    font-weight: 500;   
-}
-.active-link a:hover{
-    text-decoration: none;  
-    color: white;
-}
-.link a{
-    text-decoration: none;
-    padding: 6px 20px;
-    color: black;
-    font-weight: 500;
-    font-size: 18px; 
-     
-}
-.link a:hover{
-    font-weight: 500;
-    text-decoration: none;
-    padding: 6px 20px;
-    color: white;
-    border-radius: 100px;
-    background-color: #316DC3;
-}
-.nav-ul{
-    margin-left: 30%
-}
+
 .marquee{
     margin: 10px 100px;
 }
-
-
-#navbar {
-    overflow: hidden;
-    background-color: #333;
-  }
-
-.sticky {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding-top: 0px;
-  }
 
 .blue{
 font-weight: bold;
@@ -91,38 +43,30 @@ font-weight: bold;
     font-weight: bold;
     color: green;
 }
-
-
 .inner{
     font-family: 'Merriweather', serif;
     text-align: justify;
     width: 90%;
     padding: 20px 10px;
 }
+/* logo css */
 .heading{
     font-family: 'Merriweather', serif;
-
     text-transform: uppercase;
-    /* border: 1px solid black;
-    overflow: hidden; */
+    overflow: hidden; 
     text-align: center  ;
-    /* font-size: 25px; */
-        /* font-weight: 800; */
     font-size: 250%;
-    /* line-height: 1 ! important; */
     padding-bottom: 10px;
 }
 .logo-after-heading{
     Padding-top: 10px;
     text-align: center;
-    /* border: 1px solid black; */
     margin: auto;
     position: relative;
     margin: 0 auto;
     max-width: 200px;
     position: relative
 }
-/* logo css */
 .logo-after-heading img{
     width: 40px;
     height: 40px;
@@ -147,33 +91,31 @@ font-weight: bold;
     background: #427900;
 }
 /* logo css */
-
+/* blue and green color */
 .bg-clr{
     font-family: 'Merriweather', serif;
     font-weight: bolder;
     color: white;
     background-color: rgba(36, 79, 242, 0.9) !important;
 }
-
 .lgreen{
     font-weight: bold;
     color: rgb(0, 255, 0);
 }
+/* blue and green color */
 .counter{
     font-family: 'Merriweather' serif;
 }
 .paragraph{
     font-size: 20px;
 }
-
-.fa-angle-down:before {
-    content: "\f207";
-}
 .border-box{
     border: 1 px solid black;
     text-align: center;
     padding: 25px;
 }
+/* introduction sention end */
+/* section what are we doing */
 .wtd{
     padding-top: 100px;
     font-family: 'Merriweather', serif;
@@ -185,6 +127,8 @@ font-weight: bold;
     text-transform: uppercase;
     padding-top: 30px;
 }
+/* what are we doing end */
+/* mission section  */
 .mission{
     font-family: 'Merriweather', serif;
 }
@@ -230,6 +174,25 @@ font-weight: bold;
     text-transform: uppercase   ;
     color: #316DC3;
 }
+/* mission end */
+/* image section */
+.gallery-img  {
+    margin: 50px;
+    height: auto;
+}
+.gallery-img  .image{
+    margin:20px 0;
+    width: 20%;
+    height: auto;
+    float: left;
+}
+.gallery-img  .image img{
+width: 100%;
+padding: 10px 5px;
+}
+/* image section end */
+
+/* footer */
 .footer{
     background-color:#252424;
     color: blanchedalmond;
@@ -252,8 +215,7 @@ font-weight: bold;
     padding-bottom: 10px;
     position: relative;
 }
-.inner1 h5::before{
-    
+.inner1 h5::before{    
     content: "";
     height: 2px;
     position: absolute;
@@ -281,17 +243,6 @@ font-weight: bold;
 .footer-icon img#fb{
     margin-right: 7px;
 }
-/* .fbox1 ul {
-    line-height: 2rem;
-    color: rgb(167, 165, 165);
-    font-weight: 450;
-    padding-top: 30px;
-} */
-/* .fbox1 ul li{
-    /* line-height: 1em; */
-    /* white-space: nowrap; */
-    /* list-style: none;
-} */ 
 .fbox1 p img{
     width: 20px;
     height: 20px;
@@ -301,4 +252,126 @@ font-weight: bold;
     height: 20px;
     margin: 0px 5px 0px 60px;
 }
+.copyright{
+    background-color: rgb(84, 84, 236);
+    width: 100%;
+    color: white;
+    padding: 10px 110px;
+    font-size: 90%;
+}
+/* footer end */
+
+
+/* sticky navbar */
+
+.dropdown:hover .dropdown-menu{
+    display: block
+}
+
+#navbar {
+    z-index: 10;
+    /* overflow: hidden; */
+    background-color: rgb(241, 232, 232);
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  #navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .content {
+    padding: 16px;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }
+
+  .navbar-logo img{
+      margin-left: 30px;
+      width: 180px ;
+      height: 50px;
+
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+      top: 30px;
+      min-width: 200px !important;
+  }
+  
+  .navbar-expand-lg .navbar-nav .dropdown-menu a{
+    border-radius: 0px !important;
+
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu a:hover{
+    background-color: rgb(189, 184, 184) !important;
+    padding-left: 20px !important;
+}
+  .active a{
+      font-weight: bold;
+      background: blue !important;
+      color: white !important;
+      border-radius: 100px !important;
+      padding: 4px 10px !important;
+      text-transform: capitalize !important; 
+      margin-right: 1px !important;
+      font-size: 14px !important;
+  }
+  .navbar-btn a {
+      font-size: 14px !important;
+      border-radius: 100px !important;
+      padding: 4px 10px !important;
+      text-transform: capitalize !important;
+      color: black !important; 
+      margin-right: 1px !important;
+  }
+  .navbar-btn a:hover{
+    background: blue !important; 
+    color: white !important; 
+  }
+
+  .dropdown-menu{
+    background-color: white !important;
+  }
+  .dropdown-menu a{
+      text-transform: capitalize;
+      font-size: 14px !important;
+      margin: 0 !important;
+      padding: 5px 10px !important;
+      text-align: left !important;
+      color: black !important;
+  }
+  .dropdown-menu .dropdown-item i{
+      float: right;
+  } 
+  .navbar-nav{
+      margin-left: 400px;
+    
+  }
+
+  
+
+
+  /* sticky navbar */
+
 

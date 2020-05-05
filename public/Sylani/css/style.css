@@ -262,116 +262,141 @@ padding: 10px 5px;
 /* footer end */
 
 
-/* sticky navbar */
+/* navbar css */
 
-.dropdown:hover .dropdown-menu{
-    display: block
-}
+
+
+/* sticky navbar start */
 
 #navbar {
-    z-index: 10;
-    /* overflow: hidden; */
-    background-color: rgb(241, 232, 232);
-  }
-  
-  #navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  #navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  #navbar a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .content {
-    padding: 16px;
+    background-color: rgb(236, 230, 230);
   }
   
   .sticky {
+    z-index: 1;
+
     position: fixed;
     top: 0;
     width: 100%;
   }
-  
-  .sticky + .content {
-    padding-top: 60px;
-  }
 
-  .navbar-logo img{
-      margin-left: 30px;
-      width: 180px ;
-      height: 50px;
+/* sticky navbar end */
 
-  }
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
-      top: 30px;
-      min-width: 200px !important;
-  }
-  
-  .navbar-expand-lg .navbar-nav .dropdown-menu a{
-    border-radius: 0px !important;
 
+/* navbar logo */
+
+.navbar_logo img{
+    width: 200px;
+    height: 60px;
+    margin: 0 0 0 25px;
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu a:hover{
-    background-color: rgb(189, 184, 184) !important;
-    padding-left: 20px !important;
+
+/* navbar_menu */
+.navbar_menu{
+    height: 60px;;
+    margin-left: 300px;
 }
-  .active a{
-      font-weight: bold;
-      background: blue !important;
-      color: white !important;
-      border-radius: 100px !important;
-      padding: 4px 10px !important;
-      text-transform: capitalize !important; 
-      margin-right: 1px !important;
-      font-size: 14px !important;
-  }
-  .navbar-btn a {
-      font-size: 14px !important;
-      border-radius: 100px !important;
-      padding: 4px 10px !important;
-      text-transform: capitalize !important;
-      color: black !important; 
-      margin-right: 1px !important;
-  }
-  .navbar-btn a:hover{
-    background: blue !important; 
-    color: white !important; 
-  }
+.navbar_menu ul {
+    text-transform: capitalize;
+    list-style: none;
+    display: inline-flex; /* inline-flex*/
+}
+.navbar_menu ul li{
+    margin: 10px 0px;
+    padding:  5px 10px;
+    border-radius: 100px;
+}
+.navbar_menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
 
-  .dropdown-menu{
-    background-color: white !important;
-  }
-  .dropdown-menu a{
-      text-transform: capitalize;
-      font-size: 14px !important;
-      margin: 0 !important;
-      padding: 5px 10px !important;
-      text-align: left !important;
-      color: black !important;
-  }
-  .dropdown-menu .dropdown-item i{
-      float: right;
-  } 
-  .navbar-nav{
-      margin-left: 400px;
-    
-  }
+.active_li {
+    background-color: blue;
+    font-weight: bold;
+}
+.active_li a{
+    color: white !important;
+}
+.navbar_menu ul li:hover{
+    background-color: blue;
+}
+.navbar_menu ul li:hover a{
+    color: white ;
+}
+.first_hover_menu{
+    display :none;
+}
+.navbar_menu ul li:hover .first_hover_menu{
+    z-index: 1;
+    display: block;
+    position: absolute;
+    top: 55px;
+    min-width: 200px;
+    background-color: white;
+}
+.navbar_menu ul li:hover .first_hover_menu ul{
+    display: block;
+}
+.navbar_menu ul li:hover .first_hover_menu ul li a{
+    color: black ;
+}
+.first_hover_menu ul li:hover {
+    border-radius: 0 !important;
+    background: blue ;
+    color: white ;
+    padding-left: 10px; 
+}
+.navbar_menu ul li:hover .first_hover_menu ul li:hover a{
+    color: white ;
+    margin-left: 10px;
+}
+.first_hover_menu .fa-angle-right{
+    float: right;
+    padding-right: 10px;
+}
 
-  
-
-
-  /* sticky navbar */
-
+/* css for 2nd menu */
+.second_hover_menu{
+    display: none;   
+}
+.hover_me:hover .second_hover_menu{
+    display: block;
+    position: absolute;
+    margin-left: 190px;
+    min-width: max-content;
+    background-color:  white;
+}
+.navbar_menu ul li:hover .hover_me:hover .second_hover_menu ul li a{
+    color: black ;
+}
+.navbar_menu ul li:hover .hover_me:hover .second_hover_menu ul li:hover a{
+    color: white;
+    padding-left: 10px;
+}
+/* css for 3rd menu */
+.second_hover_menu .fa-angle-right{
+    float: right;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.third_hover_menu{
+    display: none;
+}
+.second_hover:hover .third_hover_menu{
+    display: block;
+    position: absolute;
+    margin-left: 200px;
+    min-width: max-content;
+    background-color:  white;
+}
+.navbar_menu ul li:hover .hover_me:hover .second_hover_menu .second_hover:hover .third_hover_menu ul li a{
+    color: black ;
+}
+.navbar_menu ul li:hover .hover_me:hover .second_hover_menu .second_hover:hover .third_hover_menu ul li:hover a{
+    color: white;
+    padding-left: 20px;
+}
 

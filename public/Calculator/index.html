@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Calculator</title>
+</head>
+
+<body class="body">
+
+    <div class="container ">
+    
+        <h1>Calculator</h1>
+        <div class="calculator">
+            <div class="result">
+                <p id="back"></p>
+                <p id="front"></p>
+
+            </div>
+            <div class="keypad">
+                <button class= "keyBtn" id="clear" onclick="clearFun()"> C </button>
+                <button class= "keyBtn" id="backSpace" onclick="backSpace()"> CE </button>
+                <button class= "keyBtn" id="equal" onclick="equalOpt()"> = </button>
+
+                <button class= "keyBtn" id="division" onclick="operator('/')"> / </button>
+                <button class= "keyBtn" id="7" onclick="getNumber('7')" > 7 </button>
+                <button class= "keyBtn" id="8" onclick="getNumber('8')" > 8 </button>
+                <button class= "keyBtn" id="9" onclick="getNumber('9')" > 9 </button>
+                <button class= "keyBtn" id="multiply" onclick="operator('*')"> x </button>
+                <button class= "keyBtn" id="4" onclick="getNumber('4')" > 4 </button>
+                <button class= "keyBtn" id="5" onclick="getNumber('5')" > 5 </button>
+                <button class= "keyBtn" id="6" onclick="getNumber('6')" > 6 </button>
+                <button class= "keyBtn" id="subtraction" onclick="operator('-')"> - </button>
+                <button class= "keyBtn" id="1" onclick="getNumber('1')" > 1 </button>
+                <button class= "keyBtn" id="2" onclick="getNumber('2')" > 2 </button>
+                <button class= "keyBtn" id="3" onclick="getNumber('3')" > 3 </button>
+                <button class= "keyBtn" id="addition" onclick="operator('+')"> + </button>
+                <button class= "keyBtn" id="0"   onclick="getNumber('0')" > 0 </button> 
+                <button class= "keyBtn" id="00"  onclick="doubleZero('00')" > 00 </button>
+                <button class= "keyBtn" id="000" onclick="tripleZero('000')" > 000 </button>
+                <button class= "keyBtn" id="percentage" onclick="operator('%')"> % </button>
+            </div>
+        
+        </div>
+    </div>
+    
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

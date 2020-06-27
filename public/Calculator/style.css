@@ -1,0 +1,75 @@
+.body{
+    background-color: black;
+    font-family: 'Open Sans',sans-serif;
+     background-image: url(download.jpg);
+    /* background-repeat: no-repeat;
+    background-repeat: initial   ; */
+    background-size: cover ;  
+
+}
+   
+.container h1{
+    font-weight: bold;
+    padding-top: 10px;
+    text-align: center;
+    color: black;
+}
+.calculator{
+    width: 300px;
+    height: 470px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 0 90px 10px black;
+}
+.result{
+    overflow: hidden;
+    height: 130px;
+    border-bottom: 1px solid rgb(204, 202, 202);
+    margin-bottom: 10px;
+
+}
+.keypad{
+    height: 320px;
+}
+#back{
+    height: 40px;
+    text-align: right;
+    padding: 10px 20px 0 0;
+    color: rgb(117, 117, 117);
+    font-size: 20px;
+    border-bottom: 1px solid rgb(204, 202, 202);
+}
+#front{
+    text-align: right;
+    font-size: 30px;
+    padding: 5px 20px 0 5px;
+
+}
+.keyBtn{
+    /* border: 1px solid black; */
+    font-size: larger;
+    width: 55px;
+    height: 55px;
+    margin: 5px 10px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(233, 230, 230);
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-weight: bold;
+    float: left;
+}
+.keyBtn:active{
+    font-size: small;
+}
+.keyBtn:focus{
+    outline: 0;
+}
+.keyBtn:nth-child(4), .keyBtn:nth-child(8), .keyBtn:nth-child(12),.keyBtn:nth-child(16), .keyBtn:nth-child(20){
+    background-color: rgb(44, 235, 241);
+}
+.keyBtn:nth-child(1), .keyBtn:nth-child(2), .keyBtn:nth-child(3){
+    background-color: rgb(191, 195, 195);
+
+}

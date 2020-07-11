@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Stop Watch</title>
+
+</head>
+
+<body>
+    <h1>Stop Watch</h1>
+    <div class="container-fluid">
+        <div class="stopWatchContainer">
+            <div class="display">
+                <div class="timer">
+                    <span id="hr">00:</span>
+                    <span id="min">00:</span>
+                    <span id="ms">00:</span>
+                    <span id="sec">00</span>
+                </div>
+            </div>
+            <div class="buttons">
+                
+                <a id="stop" href="javascript:void(0)"><i class="fa fa-stop" aria-hidden="true"></i></a>
+                <a id="play" href="javascript:void(0)"><i class="fa fa-play" aria-hidden="true">Play</i></a>
+                <a id="restart" href="javascript:void(0)"><i class="fa fa-undo" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

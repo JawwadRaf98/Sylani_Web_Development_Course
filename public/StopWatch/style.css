@@ -1,0 +1,72 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+body{
+    height: 100vh;
+    align-items: center;
+    background:linear-gradient(to right, rgb(11, 185, 177), rgb(118, 248, 239),  rgb(194, 255, 252));
+}
+h1{
+    padding-top: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color: rgb(98, 8, 182);
+}
+.stopWatchContainer{
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px black;
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.timer{
+    padding: 75px 0px;
+    margin: auto;
+    width: fit-content;    
+    /* border: 1px solid black; */
+}
+.timer span{
+font-size: 50px;
+}
+.buttons{
+    padding: 10px auto;    
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+.buttons a{
+    display: inline-block;
+    max-width: 0 10px;
+    text-decoration: none;
+}
+#stop, #restart{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    color: white;
+    font-size: 20px;
+    padding: 0 20px;
+    background: linear-gradient(45deg,rgb(235, 171, 255),rgb(202, 66, 243));
+    box-shadow: 0px 0px 10px rgba(202, 66, 243, 0.904),0px 0px 10px rgb(212, 123, 240);
+    transition: all ease 0.2s;
+}
+#play{
+    width: 100px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 20px;
+    line-height: 40px;
+    color: white;
+    font-size: 20px;
+    padding: 0 20px;
+    background: linear-gradient(45deg,rgb(155, 202, 233),rgb(42, 208, 250));
+    box-shadow: 0px 0px 10px 0px rgb(18, 124, 124);
+    transition: all ease 0.2s;
+}
+#stop:active, #play:active, #restart:active{
+    transform: scale(0.9);
+}

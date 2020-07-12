@@ -17,25 +17,34 @@ h1{
 .stopWatchContainer{
     margin: 50px auto;
     box-shadow: 0px 0px 10px black;
-    width: 300px;
+    width: 350px;
     height: 350px;
     background-color: #fff;
     border-radius: 10px;
 }
 .timer{
-    padding: 75px 0px;
+    padding: 50px 0px;
     margin: auto;
-    width: fit-content;    
+    width: fit-content; 
+
     /* border: 1px solid black; */
 }
-.timer span{
-font-size: 50px;
+.timer h1{
+    top: 10px;
+    color:  black;
+    font-size: 40px;
+    width: 50px;
+    /* border: 1px solid black; */
+    display: inline-block;
+    height: 50px;
 }
 .buttons{
+    /* border: 1px solid black; */
+    /* margin-top: 20px; */
     padding: 10px auto;    
-    align-items: center;
+    /* align-items: center; */
     width: fit-content;
-    margin: auto;
+    margin: 20px auto;
 }
 .buttons a{
     display: inline-block;
@@ -69,4 +78,17 @@ font-size: 50px;
 }
 #stop:active, #play:active, #restart:active{
     transform: scale(0.9);
+}
+#hr::after, #min::after,  #sec::after{
+    content: ":";
+    padding: 0 2px;
+}
+#demoPara{
+    height: 30px;
+    /* border: 1px solid black; */
+    text-align: center;
+    color: blueviolet;
+    font-style: italic;
+    padding-top: 20px;
+    text-transform: capitalize;
 }

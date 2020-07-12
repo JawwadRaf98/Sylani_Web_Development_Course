@@ -17,18 +17,19 @@
     <div class="container-fluid">
         <div class="stopWatchContainer">
             <div class="display">
+                <h3 id="demoPara"></h3>
                 <div class="timer">
-                    <span id="hr">00:</span>
-                    <span id="min">00:</span>
-                    <span id="ms">00:</span>
-                    <span id="sec">00</span>
+                    <h1 id="hr">00</h1>
+                    <h1 id="min">00</h1>
+                    <h1 id="sec">00</h1>
+                    <h1 id="ms">00</h1>
                 </div>
             </div>
             <div class="buttons">
                 
-                <a id="stop" href="javascript:void(0)"><i class="fa fa-stop" aria-hidden="true"></i></a>
-                <a id="play" href="javascript:void(0)"><i class="fa fa-play" aria-hidden="true">Play</i></a>
-                <a id="restart" href="javascript:void(0)"><i class="fa fa-undo" aria-hidden="true"></i></a>
+                <a id="stop" href="javascript:void(0)" onclick="stop()"><i class="fa fa-stop" aria-hidden="true"></i></a>
+                <a id="play" href="javascript:void(0)" onclick="play()"><i class="fa fa-play" aria-hidden="true">Play</i></a>
+                <a id="restart" href="javascript:void(0)" onclick="restart()"><i class="fa fa-undo" aria-hidden="true"></i></a>
             </div>
         </div>
     </div>

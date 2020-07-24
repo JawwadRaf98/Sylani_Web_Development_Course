@@ -41,6 +41,8 @@
     background: linear-gradient(to right, rgb(129, 202, 248), rgb(57, 159, 253), rgb(207, 240, 253));
 }
 .dataPanel{
+    display: flex;
+    flex-direction: column-reverse; 
     min-width: 280px;
     height: auto;
     box-shadow: 0px 0px 8px black;

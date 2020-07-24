@@ -39,6 +39,10 @@ function addTask(){
     dataPanel.setAttribute('class','dataPanel dataPanelAfterDelete')
 
     var value = document.getElementById('task').value
+
+    if(value === ""){
+        value = "Nothing Added"
+    }
     document.getElementById('task').value = ""
 
     var dataField = document.createElement('div')
@@ -147,7 +151,7 @@ function doneFuntion(){
     var dataField = document.getElementById('dataField')
     dataField.setAttribute('id','dataFieldBorderAfterDone')
     btn.disabled = true
-    console.log(vardataField)
+    // console.log(dataField)
 
 
 }
@@ -157,11 +161,20 @@ function deleteFuntion(e){
         e.parentNode.parentNode.parentNode.parentNode.parentNode.remove()
     }
 
-    function checkingForEmpytyTaskField(){
-        var dataPanel = document.getElementById('dataPanel')
-        console.log(dataPanel.childNodes[0])
-    }
-    checkingForEmpytyTaskField()
+    // function checkingForEmpytyTaskField(){
+        
+    //     var dataPanel = document.getElementById('dataPanel')
+    //     var chlidsLength = dataPanel.childNodes.length
+    //     var checktypeNode = dataPanel.childNodes[0].nodeName
+
+    //     if(checktypeNode = '#text'){
+    //         var dataPanel = document.getElementById('dataPanel')
+    //         dataPanel.setAttribute('class','dataPanel')
+    //         dataPanel.innerHTML = ""
+    //     }
+    //     console.log(chlidsLength,checktypeNode)
+    // }
+    // checkingForEmpytyTaskField()
 }
 function editFuntion(e){
     var value = e.parentNode.parentNode.parentNode.parentNode.childNodes[1].innerHTML

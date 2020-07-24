@@ -73,7 +73,7 @@
     width: 90%;
     margin: 3px;
 }
-#delete, #edit{
+#delete, #edit, #done{
     text-transform: uppercase;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     background-color: red;
@@ -82,7 +82,13 @@
     color: white;
 }
 #edit{
+    background-color: rgb(116, 250, 134);
+}
+#done{
     background-color: blue;
+}
+#panelDate{
+    font-size: 1.3vw;
 }
 
 @media screen and (max-width: 767px) {

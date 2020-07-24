@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header container-fluid">
+        <h1>ToDo Application</h1>
+    </div>
+    <div class="time-section container-fluid ">
+
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5  date_time_section">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6" id="date">
+                        <h5 id="todayDate"></h5>
+                    </div>
+                    <div class="col-12 col-12 col-md-6 col-lg-6" id="time">
+                        <h5 id="timeNow"></h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-7 col-lg-7  date" id="input_section">
+
+
+                <div class="input-group ">
+
+                    <input type="text" id="task" class="form-control" placeholder="Insert Task" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="button-addon2" onclick="deletefunction()">Button</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="DataSection">
+        <div class="container-fluid">
+
+            <div class="dataPanel" id="dataPanel">
+            <!-- yaha say javascript say banyga -->
+
+                <!-- <div class="dataField">
+                    <div class="row">
+                        <div class="col-2 panelDate">
+                            date
+                        </div>
+                        <div class="col-2 panelDay">
+                            day
+                        </div>
+                        <div class="col-4 panelTitle">
+                            task lo
+                        </div>
+                        <div class="col-4 ">
+                            <div class="row">
+                                <div class="col-12 button">
+                                    <button id="delete">DElete</button>
+                                </div>
+                                <div class="col-12 button">
+                                    <button id="edit">edit</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <!-- yaha tak javascript say banyga -->
+
+        
+        
+        </div>
+    </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -9,126 +9,164 @@ function TodayDate(){
     var day = days[currentDate.getDay()]
     var FullDate  = day + " " + date + "-"+ month+ "-"+ year
 
+
+    // Setting Time
+
+    var timeSection = document.getElementById('timeNow')
+    var hours = ['12','1','2','3','4','5','6','7','8','9','10','11','12','1','2','3','4','5','6','7','8','9','10','11']
+    var hour = hours[currentDate.getHours()]
+    var minutes = currentDate.getMinutes()
+    var seconds = currentDate.getSeconds()
+    var meridiem = "A.M"
+    var a = 11
+    if(currentDate.getHours()>11){
+        meridiem = "P.M"
+    }
+    var FullTime = hour +":"+minutes+":"+seconds+" "+ meridiem
+    timeSection.innerHTML = FullTime
+
     return FullDate
 }
 var dateSection =  document.getElementById('todayDate')
-// var currentDate = new Date()
-// var date = currentDate.getDate()
-// var months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Sep", "Oct", "Nov", "Dec" ]
-// var month = months[currentDate.getMonth()]
-// var year = currentDate.getFullYear()
-// var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-// var day = days[currentDate.getDay()]
 
-// var FullDate  = day + " " + date + "-"+ month+ "-"+ year
 dateSection.innerHTML = TodayDate()
 
 
 
-// Setting Time
-
-// var timeSection = document.getElementById('timeNow')
-// var hours = ['12','1','2','3','4','5','6','7','8','9','10','11','12','1','2','3','4','5','6','7','8','9','10','11']
-// var hour = hours[currentDate.getHours()]
-// var minutes = currentDate.getMinutes()
-// var seconds = currentDate.getSeconds()
-// var meridiem = "A.M"
-// var a = 11
-// if(currentDate.getHours()>11){
-//     meridiem = "P.M"
-// }
-// var FullTime = hour +":"+minutes+":"+seconds+" "+ meridiem
-// timeSection.innerHTML = FullTime
-
-function deletefunction(){
-    
-    var inputData = document.getElementById('task').value
+setInterval(TodayDate, 100)
+function addTask(){
     var dataPanel = document.getElementById('dataPanel')
-    
+    dataPanel.setAttribute('class','dataPanel dataPanelAfterDelete')
+
+    var value = document.getElementById('task').value
+    document.getElementById('task').value = ""
+
     var dataField = document.createElement('div')
     dataField.setAttribute('class','dataField')
+    dataField.setAttribute('id','dataField')
+
+    dataPanel.appendChild(dataField)
     
-
     var row = document.createElement('div')
-    row.setAttribute('class','row')
+    row.setAttribute('class', 'row')
+    dataField.appendChild(row)
 
+    // date section
     var panelDate = document.createElement('div')
-    panelDate.setAttribute('class',"col-2 panelDate")
+    panelDate.setAttribute('class', 'col-lg-2 col-md-2 col-sm-4 col-4 panelDate')
 
-    var h3Date = document.createElement('h3')
-    h3Date.setAttribute('id',"panelDate")
-    var h3DateText = document.createTextNode(TodayDate())
-    h3Date.appendChild(h3DateText)
-    panelDate.appendChild(h3Date)
+    function todayDate(){
+        var currentDate = new Date()
+        var date = currentDate.getDate()
+        var months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", "Sep", "Oct", "Nov", "Dec" ]
+        var month = months[currentDate.getMonth()]
+        var year = currentDate.getFullYear()
+        var Fulldate = date +"/"+month+"/"+year
+        return Fulldate
+    }
 
-    TodayDate()
-    // yaha pay panel date ka code aega
+    var panelDateText = document.createTextNode(todayDate())
+    panelDate.appendChild(panelDateText)
     row.appendChild(panelDate)
 
-    var panelDay = document.createElement('div')
-    panelDay.setAttribute('class', "col-2 panelDay")
-    //yaha pay day ka code aega
-    row.appendChild(panelDay)
- 
+    // title section
     var panelTitle = document.createElement('div')
-    panelTitle.setAttribute('class', 'col-4 panelTitle')
-    var text = document.createTextNode(inputData)
-    panelTitle.appendChild(text)
+    panelTitle.setAttribute('class', 'col-lg-7 col-md-7 col-sm-8 col-8 panelTitle')
+    //Yaha task aega
+    var panelTitleText = document.createTextNode(value)
+    panelTitle.appendChild(panelTitleText)
     row.appendChild(panelTitle)
 
-    var col4 = document.createElement('div')
-    col4.setAttribute('class', 'col-4')
+    // Button Section
+    var btnSection = document.createElement('div')
+    btnSection.setAttribute('class','col-lg-3 col-md-3 col-sm-12 col-12 my-auto ')
+    row.appendChild(btnSection)
 
     var row2 = document.createElement('div')
-    row2.setAttribute('class','row')
-    
-    // delete btn
-    var col12 = document.createElement('div')
-    col12.setAttribute('class','col-12 button')
+    row2.setAttribute('class','row buttonRow')
+    btnSection.appendChild(row2)
 
-
-    var dltBtn = document.createElement('button')
-    dltBtn.setAttribute('class','col-12 button')
-    dltBtn.setAttribute('id', 'delete')
-    dltBtn.setAttribute('onclick',"delBtnFunction('this')")
-    id="delete"
-
-    var BtnText = document.createTextNode('delete')
-    dltBtn.appendChild(BtnText)
-    col12.appendChild(dltBtn)
-    row2.appendChild(col12)
-
-    // edit btn
-    var col12_2 = document.createElement('div')
-    col12_2.setAttribute('class','col-12 button')
+// Edit Button
+    var editBtnDiv = document.createElement('div')
+    editBtnDiv.setAttribute('class', 'button')
+    row2.appendChild(editBtnDiv)
 
     var editBtn = document.createElement('button')
-    editBtn.setAttribute('id', 'edit')
-    editBtn.setAttribute('class',"col-12 button")
-    editBtn.setAttribute('onclick',"editBtnFunction('this')")
+    editBtn.setAttribute('type','button')
+    editBtn.setAttribute('class','btn btn-outline-primary')
+    editBtn.setAttribute('id','edit')
+    editBtn.setAttribute('onclick','editFuntion(this)')
+    var editBtnText = document.createTextNode('Edit')
+    editBtn.append(editBtnText)
+    editBtnDiv.appendChild(editBtn)
 
-    var editBtnText = document.createTextNode('edit')
-    editBtn.appendChild(editBtnText)
-    col12_2.appendChild(editBtn)
-    row2.appendChild(col12_2)
+    // Delete button
+    var deleteBtnDiv = document.createElement('div')
+    deleteBtnDiv.setAttribute('class', 'button')
+    row2.appendChild(deleteBtnDiv)
 
-    // done Btn
-    var col12_3 = document.createElement('div')
-    col12_3.setAttribute('class','col-12 button')
+    var deleteBtn = document.createElement('button')
+    deleteBtn.setAttribute('type','button')
+    deleteBtn.setAttribute('class','btn btn-outline-danger')
+    deleteBtn.setAttribute('id','delete')
+    deleteBtn.setAttribute('onclick','deleteFuntion(this)')
+    var deleteBtnText = document.createTextNode('Delete')
+    deleteBtn.append(deleteBtnText)
+    deleteBtnDiv.appendChild(deleteBtn)
+
+
+    // Done button
+    var doneBtnDiv = document.createElement('div')
+    doneBtnDiv.setAttribute('class', 'button')
+    row2.appendChild(doneBtnDiv)
 
     var doneBtn = document.createElement('button')
-    doneBtn.setAttribute('id', 'done')
-    doneBtn.setAttribute('class',"col-12 button")
-    doneBtn.setAttribute('onclick',"doneBtnFunction('this')")
-
+    doneBtn.setAttribute('type','button')
+    doneBtn.setAttribute('class','btn btn-outline-success')
+    doneBtn.setAttribute('id','done')
+    doneBtn.setAttribute('onclick','doneFuntion()')
     var doneBtnText = document.createTextNode('Done')
-    doneBtn.appendChild(doneBtnText)
-    col12_3.appendChild(doneBtn)
-    row2.appendChild(col12_3)
+    doneBtn.append(doneBtnText)
+    doneBtnDiv.appendChild(doneBtn)
 
-    col4.appendChild(row2)
-    row.appendChild(col4)
+    // console.log(row)
+}
 
-    dataField.appendChild(row)
-    dataPanel.appendChild(dataField)
+function deleteAllfunction(){
+    var flag = confirm("Are you want to delete all task???")
+    if(flag){
+        var dataPanel = document.getElementById('dataPanel')
+        dataPanel.setAttribute('class','dataPanel')
+        dataPanel.innerHTML = ""
+    }
+}
+
+function doneFuntion(){
+
+    var btn  = document.getElementById('edit')
+    var dataField = document.getElementById('dataField')
+    dataField.setAttribute('id','dataFieldBorderAfterDone')
+    btn.disabled = true
+    console.log(vardataField)
+
+
+}
+function deleteFuntion(e){
+    var flag = confirm('Are you sure????')
+    if(flag){
+        e.parentNode.parentNode.parentNode.parentNode.parentNode.remove()
+    }
+
+    function checkingForEmpytyTaskField(){
+        var dataPanel = document.getElementById('dataPanel')
+        console.log(dataPanel.childNodes[0])
+    }
+    checkingForEmpytyTaskField()
+}
+function editFuntion(e){
+    var value = e.parentNode.parentNode.parentNode.parentNode.childNodes[1].innerHTML
+    var updatedValue = prompt("Please update your task!", value)
+
+    e.parentNode.parentNode.parentNode.parentNode.childNodes[1].innerHTML = updatedValue
+    // console.log(e.parentNode.parentNode.parentNode.parentNode.childNodes[1].innerHTML)
 }

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo App</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 
 <body>
@@ -32,13 +33,17 @@
 
                 <div class="input-group ">
 
-                    <input type="text" id="task" class="form-control" required placeholder="Insert Task" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <input type="text" id="task" class="form-control" required placeholder="Insert Task"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2" onclick="deletefunction()">Button</button>
+                        <button class="btn btn-outline-primary" type="button" id="button-addon2"
+                            onclick="addTask()">Add
+                        </button>
+                        <button class="btn btn-outline-danger" type="button" id="button-addon2"
+                            onclick="deleteAllfunction()">Delete All
+                        </button>
                     </div>
                 </div>
-
-
             </div>
 
         </div>
@@ -48,40 +53,44 @@
         <div class="container-fluid">
 
             <div class="dataPanel" id="dataPanel">
-            <!-- yaha say javascript say banyga -->
-
-                <!-- <div class="dataField">
-                    <div class="row">
-                        <div class="col-2 panelDate">
-                            date
-                        </div>
-                        <div class="col-2 panelDay">
-                            day
-                        </div>
-                        <div class="col-4 panelTitle">
-                            task lo
-                        </div>
-                        <div class="col-4 ">
-                            <div class="row">
-                                <div class="col-12 button">
-                                    <button id="delete">DElete</button>
-                                </div>
-                                <div class="col-12 button">
-                                    <button id="edit">edit</button>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <!-- yaha tak javascript say banyga -->
-
-        
-        
+                
+            </div> 
         </div>
     </div>
     </div>
+
+    <!-- 
+
+        <div class="dataField ">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-4 panelDate">
+                            date
+                        </div>
+
+                        <div class="col-lg-7 col-md-7 col-sm-8 col-8 panelTitle">
+                            task lo
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-12 col-12 my-auto ">
+                            <div class="row buttonRow">
+                                <div class=" button ">
+                                    <button type="button" class="btn btn-outline-primary" id="edit">edit</button>
+                                </div>
+                                <div class=" button ">
+                                    <button type="button" class="btn btn-outline-danger" id="delete">DElete</button>
+                                </div>
+                                <div class=" button ">
+                                    <button type="button" class="btn btn-outline-success" id="done">Done</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+
+                
+
+
+                -->
+            <!-- yaha tak javascript say banyga -->
 
 
     <script src="app.js"></script>

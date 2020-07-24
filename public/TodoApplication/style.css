@@ -42,50 +42,80 @@
 }
 .dataPanel{
     min-width: 280px;
-    max-width: 90%;
-    /* border: 1px solid black; */
     height: auto;
-    /* margin: 50px auto ; */
-    background-color: white;
     box-shadow: 0px 0px 8px black;
 }
-.dataField{
-    width: 90%;
-    border: 4px solid rgb(199, 199, 199);
-    height: auto;
-    margin: 20px auto;
-    border-left: 4px solid green;
-    border-radius: 0px 10px 10px 0px;
+.dataPanelAfterDelete{
+    margin: 50px auto !important;
+    padding: 10px 0px;
+
 }
-.panelDate, .panelDay{
+.dataField{
+    background-color: white;
+    /* border: 1px dotted red; */
+    height: auto;
+    margin: 20px;
+    border-left: 12px solid red;
+    /* border-radius: 0px 10px 10px 0px; */
+}
+#dataFieldBorderAfterDone{
+    border: 1px dotted green !important;
+    border-left: 12px solid green !important;
+
+}
+.panelDate{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2vw;
+    font-size: 2.6vw;
+    padding-top: 2px;
 }
 .panelTitle{
+    width: 100%;
     border-left: 1px solid #000;
-    border-right: 1px solid #000;
-
-    padding-top: 10px;
+    /* border-right: 1px solid #000; */
+    padding-top: 5px;
+    overflow: auto;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 3vw;
 }
-.button button{
-    font-size: 2vw;
-    width: 90%;
-    margin: 3px;
+.button {
+    width: 50%;
+    padding: 0px !important;
+    margin: 0px !important;
+    /* font-size: 2vw; */
+    margin:  auto;
+    /* border: 1px solid black !important; */
+
+    
 }
 #delete, #edit, #done{
     text-transform: uppercase;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: red;
-    border: none;
-    border-radius: 5px;
-    color: white;
+    /* border: none; */
+    /* border: 1px solid black !important; */
+    /* margin-left: 5px; */
+
+    /* border-radius: 5px; */
+    /* color: white; */
+}
+.buttonRow{
+    margin: auto;
+    width: 100%;
+    padding-left: 0px  !important;
+    border-left: 1px solid black;
+    margin: 0px !important;
+}
+#delete{
+    width: 100%;
+    /* background-color: red;    */
 }
 #edit{
-    background-color: rgb(116, 250, 134);
+    width: 100%;
+    /* background-color: rgb(13, 251, 44); */
+    /* border: 1px solid black; */
 }
 #done{
-    background-color: blue;
+    width: 200% !important;
+    /* background-color: blue; */
 }
 #panelDate{
     font-size: 1.3vw;
@@ -103,3 +133,6 @@
     }
 }
 
+.btn{
+    border-radius: 0px !important;
+}

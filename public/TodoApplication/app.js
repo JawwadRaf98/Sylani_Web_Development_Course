@@ -57,7 +57,9 @@ function addTask(){
 
     // date section
     var panelDate = document.createElement('div')
-    panelDate.setAttribute('class', 'col-lg-2 col-md-2 col-sm-4 col-4 panelDate')
+    panelDate.setAttribute('class', 'col-lg-4 col-md-4 col-sm-4 col-4 panelDate')
+    var p = document.createElement('p')
+    panelDate.appendChild(p)
 
     function todayDate(){
         var currentDate = new Date()
@@ -70,12 +72,12 @@ function addTask(){
     }
 
     var panelDateText = document.createTextNode(todayDate())
-    panelDate.appendChild(panelDateText)
+    p.appendChild(panelDateText)
     row.appendChild(panelDate)
 
     // title section
     var panelTitle = document.createElement('div')
-    panelTitle.setAttribute('class', 'col-lg-7 col-md-7 col-sm-8 col-8 panelTitle')
+    panelTitle.setAttribute('class', 'col-lg-8 col-md-8 col-sm-8 col-8 panelTitle')
     //Yaha task aega
     var panelTitleText = document.createTextNode(value)
     panelTitle.appendChild(panelTitleText)
@@ -83,7 +85,7 @@ function addTask(){
 
     // Button Section
     var btnSection = document.createElement('div')
-    btnSection.setAttribute('class','col-lg-3 col-md-3 col-sm-12 col-12 my-auto ')
+    btnSection.setAttribute('class','col-lg-12 col-md-12 col-sm-12 col-12 my-auto ')
     row.appendChild(btnSection)
 
     var row2 = document.createElement('div')
@@ -92,7 +94,7 @@ function addTask(){
 
 // Edit Button
     var editBtnDiv = document.createElement('div')
-    editBtnDiv.setAttribute('class', 'button')
+    editBtnDiv.setAttribute('class', 'button col-lg-4 col-md-4 col-sm-4 col-4')
     row2.appendChild(editBtnDiv)
 
     var editBtn = document.createElement('button')
@@ -106,7 +108,7 @@ function addTask(){
 
     // Delete button
     var deleteBtnDiv = document.createElement('div')
-    deleteBtnDiv.setAttribute('class', 'button')
+    deleteBtnDiv.setAttribute('class', 'button col-lg-4 col-md-4 col-sm-4 col-4')
     row2.appendChild(deleteBtnDiv)
 
     var deleteBtn = document.createElement('button')
@@ -121,7 +123,7 @@ function addTask(){
 
     // Done button
     var doneBtnDiv = document.createElement('div')
-    doneBtnDiv.setAttribute('class', 'button')
+    doneBtnDiv.setAttribute('class', 'button col-lg-4 col-md-4 col-sm-4 col-4')
     row2.appendChild(doneBtnDiv)
 
     var doneBtn = document.createElement('button')

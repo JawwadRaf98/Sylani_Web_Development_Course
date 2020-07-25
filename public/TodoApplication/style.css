@@ -54,11 +54,9 @@
 }
 .dataField{
     background-color: white;
-    /* border: 1px dotted red; */
     height: auto;
     margin: 20px;
     border-left: 12px solid red;
-    /* border-radius: 0px 10px 10px 0px; */
 }
 #dataFieldBorderAfterDone{
     border: 1px dotted green !important;
@@ -67,57 +65,37 @@
 }
 .panelDate{
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2.6vw;
-    padding-top: 2px;
+    font-size: 4vw;
+
+}
+.panelDate p{
+    width: fit-content;
+    margin: 2vw 1vw;
 }
 .panelTitle{
+    font-size: 5vw;
     width: 100%;
     border-left: 1px solid #000;
-    /* border-right: 1px solid #000; */
     padding-top: 5px;
     overflow: auto;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3vw;
 }
 .button {
     width: 50%;
     padding: 0px !important;
     margin: 0px !important;
-    /* font-size: 2vw; */
-    margin:  auto;
-    /* border: 1px solid black !important; */
-
-    
 }
 #delete, #edit, #done{
+    font-size: 2.5vw;
     text-transform: uppercase;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    /* border: none; */
-    /* border: 1px solid black !important; */
-    /* margin-left: 5px; */
-
-    /* border-radius: 5px; */
-    /* color: white; */
+    width: 100%;
 }
 .buttonRow{
     margin: auto;
     width: 100%;
     padding-left: 0px  !important;
-    border-left: 1px solid black;
     margin: 0px !important;
-}
-#delete{
-    width: 100%;
-    /* background-color: red;    */
-}
-#edit{
-    width: 100%;
-    /* background-color: rgb(13, 251, 44); */
-    /* border: 1px solid black; */
-}
-#done{
-    width: 200% !important;
-    /* background-color: blue; */
 }
 #panelDate{
     font-size: 1.3vw;

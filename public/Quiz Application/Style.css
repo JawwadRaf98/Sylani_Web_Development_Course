@@ -1,58 +1,89 @@
-body{
-    margin: 0px;
-    padding: 0px;
+
+.quizBody{
+    background-image: url('bgcQuiz.jpg');
 }
-.main{
-    width: 100%;
-    height: auto;
-    border-bottom: 2px solid black;
-    background: linear-gradient(to left, rgb(247, 210, 210), rgb(250, 195, 195),  rgb(196, 241, 241));
-}
-.main h1{
-    font-size: 9vh;
-    color: rgb(255, 11, 2);
-    text-transform: uppercase;
-    width: fit-content;
-    margin: auto;
-    text-align: center;
-    padding: 4vh;
-}
-.form{
-    border: 1px solid black;
-    width: 70%;
-    height: auto;
+.quiz{
+    min-width: 300px;
+    max-width: 600px;
     margin: 100px auto;
-    box-shadow: 0px 0px 6px 0px black;
-    padding: 20px;
+    /* line-height: 50vh; */
+}
+.questionPane, .optionPane{
+    /* filter: blur(0px) !important; */
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 20px 2px black;
 
 }
-.formFiled{
+.optionPane{
+    margin-top: 30px;
+}
+
+.questionNo, .question{
+    margin: 10px;
+    padding: 10px ;
+}
+.questionNo{
+    font-size: 1.9vh;
+}
+.question{
+    border: 1px dotted black;
+    font-size: 3vh;
+}
+
+.answer{
+    display: inline;
+}
+table{
+    padding: 20px 20px 0px 20px;
+    border-spacing: 10px;
     /* border: 1px solid black; */
-    padding: 10px;
 }
-.formFiled input{
-    font-size: 5vh;
-    align-items: center;
-
-    width: 99%;
-    margin: 5px  0px;
-    padding: 2px 2px 2px 5px;
-    border: 1px solid silver;
-}
-.formFiled input:focus{
-    outline: 1px solid rgb(0, 0, 0);
-    border: none;
-    padding: 2px 2px 2px 5px;
-}
-.submitBtn{
+.submit{
     /* border: 1px solid black; */
     text-align: center;
+    margin-bottom: 20px;
+}
+.submit input:focus{
+    outline: none;
+}
+.submit input{
+    border-radius: 25px;
+    padding: 5px 50px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to right, #e60000, #9e3838, #f139f1);
 
 }
-.submitBtn input{
-    padding:5px 30px;
-    /* color: aqu4a; */
-    border-radius: 0px;
+/* Result css */
+.result{
+    margin: 150px auto;
+    min-width: 250px;
+    max-width: 500px;
+    padding: 30px;
+    /* border: 1px solid black; */
+}
+.content{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 3vh;
+    border-radius: 75px 0px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px black;
+}
+.content button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: salmon;
     border: none;
-    background-color: rgb(52, 123, 230);
+}
+.content a button{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+.content button:focus{
+    outline: none;
 }

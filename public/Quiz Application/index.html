@@ -4,28 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
-    <link rel="stylesheet" href="Style.css">
+    <title id="title">Welcome</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="app.js"></script>
+
 </head>
 
-<body>
-    <div class="main">
+<body id="body">
+    <div id="main">
+    <div class="main" >
         <h1>Welcome to my quiz application</h1>
     </div>
     <div class="form">
 
-        <form action="quiz.html">
+        <form onsubmit="loadFirstQuestion()" >
             <div class="formFiled">
                 <input type="text" id="name" placeholder="Enter Your Name" required>
                 <input type="text" id="fatherName" placeholder="Enter Your Father Name" required>
             </div>
             <div class="submitBtn">
-                <input type="submit" value="Start">
+                <input type="submit" value="Start" >
             </div>
         </form>
-
     </div>
-    <script src="app.js"></script>
+
+</div>
+
 </body>
 
 </html>

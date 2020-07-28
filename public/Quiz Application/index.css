@@ -9,7 +9,7 @@ body{
     background: linear-gradient(to left, rgb(247, 210, 210), rgb(250, 195, 195),  rgb(196, 241, 241));
 }
 .main h1{
-    font-size: 7vh;
+    /* font-size: 7vh; */
     color: rgb(255, 11, 2);
     text-transform: uppercase;
     width: fit-content;
@@ -31,7 +31,7 @@ body{
     padding: 10px;
 }
 .formFiled input{
-    font-size: 2.7vw;
+    font-size: 20px;
     align-items: center;
 
     width: 99%;
@@ -45,14 +45,13 @@ body{
     padding: 2px 2px 2px 5px;
 }
 .submitBtn{
-    /* border: 1px solid black; */
     text-align: center;
-
 }
 .submitBtn input{
+    font-size: 15px;
     padding:5px 30px;
-    /* color: aqu4a; */
     border-radius: 0px;
     border: none;
     background-color: rgb(52, 123, 230);
+    font-weight: bold;
 }

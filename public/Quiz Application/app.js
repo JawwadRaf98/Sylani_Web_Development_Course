@@ -1,28 +1,85 @@
 Question = [
     {
-        ques: "Which is the capital city of Pakistan.",
-        opt1: "Karachi",
-        opt2: "Islamabad",
-        opt3: "Lahore",
-        opt4: "Multan",
-        correct: "Islamabad"
+        ques: "What is a correct syntax to output 'Hello World' in Python",
+        opt1: 'p("Hello World")',
+        opt2: 'echo "Hello World"',
+        opt3: 'echo("Hello World");',
+        opt4: 'print("Hello World")',
+        correct: 'print("Hello World")'
     }
     ,
     {
-        ques: "When was Pakistan came into beign.",
-        opt1: "1940",
-        opt2: "1930",
-        opt3: "1947",
-        opt4: "1948",
-        correct: "1947"
+        ques: 'How do you insert COMMENTS in Python code?',
+        opt1: '//This is a comment',
+        opt2: '/*This is a comment*/',
+        opt3: '#This is a comment',
+        opt4: "$This is Comment",
+        correct: '#This is a comment'
+        },
+    {
+        ques: 'Which one is NOT a legal variable name?',
+        opt1: 'my_var',
+        opt2: 'my-var',
+        opt3: "_myvar",
+        opt4: "Myvar",
+        correct: "my-var"
     },
     {
-        ques: "Afghanistan, Azerbaijan, Turkmenistan, Uzbekistan, Kyrgyzstan, Kazakhstan joined the ECO (renamed of RCD) later on. Which one of the following joined it first?",
-        opt1: "Pakistan, Iran, Turkey",
-        opt2: "Pakistan, Egypt, Iran",
-        opt3: "Turkey, Egypt, Pakistan",
-        opt4: "Iran, Turkey, Egypt",
-        correct: "Pakistan, Iran, Turkey"
+        ques: 'How do you create a variable with the numeric value 5?',
+        opt1: 'x = 5',
+        opt2: 'x = int(5)',
+        opt3: "Both the other answers are correct",
+        opt4: "None of these.",
+        correct: "Both the other answers are correct"
+    },
+    {
+        ques: 'What is the correct file extension for Python files?',
+        opt1: '.pyth',
+        opt2: '.py',
+        opt3: ".pyt",
+        opt4: ".pt",
+        correct: ".py"
+    },
+    {
+        ques: 'How do you create a variable with the floating number 2.8?',
+        opt1: 'x = 2.8',
+        opt2: 'x = float(2.8)',
+        opt3: 'Both the other answers are correct',
+        opt4: "None of these.",
+        correct: "Both the other answers are correct"
+    },
+    {
+        ques: 'What is the correct syntax to output the type of a variable or object in Python?',
+        opt1: 'print(type(x))',
+        opt2: 'print(typeof x)',
+        opt3: 'print(typeof(x))',
+        opt4: "print(typeOf(x))",
+        correct: "print(type(x))"
+    },
+    {
+        ques: 'What is the correct way to create a function in Python?',
+        opt1: 'function myfunction():',
+        opt2: 'def myFunction():',
+        opt3: 'create myFunction():',
+        opt4: "build myFunction():",
+        correct: "function myfunction():"
+    },
+    {
+        ques: 'What is a correct syntax to check the length of a variable',
+        opt1: 'print(len("Hello World"))',
+        opt2: 'print(lenght("Hello World"))',
+        opt3: 'print(("Hello World").len)',
+        opt4: 'print(("Hello World").lenght)',
+        correct: 'print(len("Hello World"))'
+    }
+    ,
+    {
+        ques: 'What is a correct syntax to create a tuple?',
+        opt1: 'x = "a", "b"',
+        opt2: 'x = ("a", "b")',
+        opt3: 'Both the other answers are correct',
+        opt4: 'None of these.',
+        correct: 'Both the other answers are correct'
     }
 ]
 

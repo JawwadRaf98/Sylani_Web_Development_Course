@@ -184,13 +184,29 @@ font-weight: bold;
     height: auto;
 }
 .gallery-img  .image{
+   
     margin:20px 0;
     width: 20%;
     height: auto;
     float: left;
 }
+.gallery-img  .image{
+transform: scale(1);
+
+}
+.gallery-img  .image img:hover{
+transform: scale(1.1);
+
+z-index: 1;
+transition: transform .7s;
+
+}
 .gallery-img  .image img{
+    transition: transform .7s;
+    transform: scale(0.9);
+ 
 width: 100%;
+/* border: 1px solid black; */
 padding: 10px 5px;
 }
 /* image section end */
@@ -404,7 +420,9 @@ padding: 10px 5px;
 }
 /* go to top btn */
 #myBtn{
-    transition: transform 1s;
+    transition-duration: .2s;
+    /* transition: transform 1s; */
+    transition-timing-function: ease-in-out;
     width: 50px ;
     height: 50px;
     border: none;

@@ -1,0 +1,17 @@
+.container{
+    border: 5px solid;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mian-cotainer input {
+    width: 88%;
+    margin: 0.5rem;
+    padding: 5px 10px;
+    border: 1px solid #d1c8c8;
+}
+.mian-cotainer {
+    width: 345px;
+    border: 1px solid;
+}
